@@ -1,33 +1,15 @@
 # qb-menu
 Menu System for the QBCore Framework
-## Preview
- ![image2](https://github.com/user-attachments/assets/00a4ca8d-c28a-469a-b646-8a5df94bc91d)
-
 
 This is a modified version of **[NH Context](https://forum.cfx.re/t/no-longer-supported-standalone-nerohiro-s-context-menu-dynamic-event-firing-menu/2564083)** by **[NeroHiro](https://github.com/nerohiro)**
 
-## Menu Item
+--[[
+EXAMPLE MENU
+--]]
 
-| Param | Description | Type | Default value |
-| ----- | ----------- | ---- | ------- |
-| header| The item title | string | No default |
-| txt? | The item description | string | "" |
-| isMenuHeader? | Whether the item is the header of the menu | boolean | false |
-| disabled? | Whether the item is clickable | boolean | false |
-| params | The options of the menu | table | No default |
-| params.event | Event name, command or function | string \| function | "" |
-| params.isAction? | Whether the event is a function | boolean | false |
-| params.isServer? | Whether the event is the name of a server event | boolean | false |
-| params.isCommand? | Whether the event is the name of command | boolean | false |
-| params.isQBCommand? | Whether the event is the name of a qbcore command | boolean | false |
-| params.args? | Arguments for the events/commans/function | table | nil |
-
-
-# Examples
-
-```LUA
+```
 RegisterCommand("qbmenutest", function(source, args, raw)
-    exports["qb-menu"]:openMenu({
+    openMenu({
         {
             header = "Main Title",
             isMenuHeader = true, -- Set to true to make a nonclickable title
@@ -57,10 +39,10 @@ RegisterCommand("qbmenutest", function(source, args, raw)
     })
 end)
 ```
-```LUA
+```
 RegisterNetEvent('qb-menu:client:testMenu2', function(data)
     local number = data.number
-    exports["qb-menu"]:openMenu({
+    openMenu({
         {
             header = "< Go Back",
         },
@@ -77,7 +59,7 @@ RegisterNetEvent('qb-menu:client:testMenu2', function(data)
     })
 end)
 ```
-```LUA
+```
 RegisterNetEvent('qb-menu:client:testButton', function(data)
     TriggerEvent('QBCore:Notify', data.message)
 end)

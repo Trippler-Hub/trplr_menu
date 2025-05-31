@@ -8,7 +8,7 @@ These guidelines will help you help us in the best way possible regardless of yo
 
 [Code of Conduct](#code-of-conduct)
 
-[I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
+[I don't want to read this whole thing, I just have a question!!!](#i-Don\'t-want-to-read-this-whole-thing-i-just-have-a-question)
 
 [How Can I Contribute?](#how-can-i-contribute)
   * [Reporting Bugs](#reporting-bugs)

@@ -17,6 +17,7 @@ const openMenu = (data = null) => {
     });
 
     $("#buttons").html(html);
+    $('.background').css('display', "block");
 
     $('.button').click(function() {
         const target = $(this)
@@ -40,6 +41,7 @@ const getButtonRender = (header, message = null, id, isMenuHeader, isDisabled, i
 
 const closeMenu = () => {
     $("#buttons").html(" ");
+    $('.background').css('display', "none");
     $('#imageHover').css('display' , 'none');
     buttonParams = [];
     images = [];
